@@ -818,7 +818,23 @@ button:focus {
       right: -4rem;
     }
   }
-  
+  @media screen and (min-width: 576px) {
+    .links div:not(.shopping__cart) {
+        display: none;
+      }
+    
+      .header {
+        top: 1rem;
+      }
+    
+      .featured__item {
+        left: -4rem;
+      }
+    
+      .contact {
+        right: -3rem;
+      }
+    }
 
 
 
