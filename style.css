@@ -618,7 +618,7 @@ button:focus {
     min-height: 100vh;
     max-width: 1300px;
     margin: auto;
-    padding: 1rem;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
   }
@@ -672,11 +672,13 @@ button:focus {
   
   .content {
     position: relative;
-    flex: 1;
+    flex: 0.5;
     display: flex;
     align-items: center;
   }
-  
+  .content header{
+  padding-right: 10%;
+  }
   .image {
     width: 70%;
     animation: shoe-animation 3s infinite;
@@ -835,7 +837,6 @@ button:focus {
         right: -3rem;
       }
     }
-
 
 
 
