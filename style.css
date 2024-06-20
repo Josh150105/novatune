@@ -1,33 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0
-}
-
-h1,
-.h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Open Sans", sans-serif;
-    color: #fff;
-    font-weight: 700;
-    line-height: 1.5
-}
-
-
-body {
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    background-color: #2b2c30;
-    font-weight: 400;
-    line-height: 1.7;
-    color: #ccc;
-    position: relative;
-    overflow-x: hidden
+flow-x: hidden
 }
 
 a {
@@ -618,7 +589,7 @@ button:focus {
     min-height: 100vh;
     max-width: 1300px;
     margin: auto;
-    padding: 0.5rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
   }
@@ -672,13 +643,11 @@ button:focus {
   
   .content {
     position: relative;
-    flex: 0.5;
+    flex: 1;
     display: flex;
     align-items: center;
   }
-  .content header{
-  padding-right: 10%;
-  }
+  
   .image {
     width: 70%;
     animation: shoe-animation 3s infinite;
@@ -820,23 +789,8 @@ button:focus {
       right: -4rem;
     }
   }
-  @media screen and (min-width: 576px) {
-    .links div:not(.shopping__cart) {
-        display: none;
-      }
-    
-      .header {
-        top: 1rem;
-      }
-    
-      .featured__item {
-        left: -4rem;
-      }
-    
-      .contact {
-        right: -3rem;
-      }
-    }
+  
+
 
 
 
