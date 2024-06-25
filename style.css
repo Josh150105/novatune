@@ -629,6 +629,9 @@ button:focus {
     align-items: center;
     justify-content: space-between;
   }
+  .nav__item{
+    position: relative;
+  }
   
   .logoss {
     font-size: 1.5rem;
@@ -836,6 +839,7 @@ button:focus {
     justify-content: space-between;
     margin-bottom: 25px;
     min-height: 100px;
+    padding: 40px;
 }
 
 .footer-widget {
