@@ -844,7 +844,7 @@ button:focus {
 
 .footer-widget {
     flex: 1 1 300px;
-    margin-bottom: 20px;
+    margin-bottom: 1px;
 }
 
 .footer-widget h3 {
@@ -854,7 +854,7 @@ button:focus {
 
 .footer-widget p {
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 .footer-widget ul {
@@ -863,7 +863,7 @@ button:focus {
 }
 
 .footer-widget ul li {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .social-icons {
