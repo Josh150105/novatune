@@ -1,0 +1,343 @@
+
+/* Basic Styling */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+   
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+  }
+  
+  /* Columns */
+  .left-column {
+    width: 65%;
+    position: relative;
+    
+  }
+   
+  .right-column {
+    width: 35%;
+    margin-top: 60px;
+    position: relative;
+    right: 40px;
+  }
+  
+  /* Left Column */
+  .left-column img {
+    width: 60%;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+   
+  .left-column img.active {
+    opacity: 1;
+  }
+  
+  /* Product Description */
+  .product-description {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+  }
+  .product-description span {
+    font-size: 12px;
+    color: #358ED7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .product-description h1 {
+    font-weight: 300;
+    font-size: 52px;
+    color: #43484D;
+    letter-spacing: -2px;
+  }
+  .product-description p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #86939E;
+    line-height: 24px;
+  }
+  ---img--
+  .container .left-column {
+    position: relative;
+    height: 210px;
+  }
+  .container .left-column img {
+    width: 60%;
+    position: absolute;
+    left: 70px;
+    top: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .container .left-column img.active {
+    opacity: 1;
+  }
+
+  .color-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .color-price .color-option .color {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-right: 8px;
+  }
+.color-option{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  position: relative;
+  top: -16px;
+}
+
+  .color-option .circles {
+    display: flex;
+  }
+  .color-option .circles .circle {
+    height: 18px;
+    width: 18px;
+    background: #0071c7;
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  .color-option .circles .circle.blue.active {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0071c7;
+  }
+  .color-option .circles .circle.green{
+    background: green;
+  }
+  .color-option .circles .circle.green.active {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px green;
+  }
+  .color-option .circles .circle.red {
+    background: red;
+  }
+  .color-option .circles .circle.red.active {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px red;
+  }
+  .color-option .circles .circle.black {
+    background: black;
+  }
+  .color-option .circles .circle.black.active {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px black;
+  }
+  
+
+  /* Cable Configuration */
+  .cable-choose {
+    margin-bottom: 20px;
+  }
+   
+  .cable-choose button {
+    border: 2px solid #E1E8EE;
+    border-radius: 6px;
+    padding: 13px 20px;
+    font-size: 14px;
+    color: #5E6977;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .5s;
+  }
+   
+  .cable-choose button:hover,
+  .cable-choose button:active,
+  .cable-choose button:focus {
+    border: 2px solid #86939E;
+    outline: none;
+  }
+   
+  .cable-config {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+    position: relative;
+    top: 50px;
+    right: 200px;
+  }
+   
+  .cable-config a {
+    color: #358ED7;
+    text-decoration: none;
+    font-size: 12px;
+    position: relative;
+    margin: 10px 0;
+    display: inline-block;
+  }
+   
+  .cable-config a:before {
+    content: "?";
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid rgba(53, 142, 215, 0.5);
+    display: inline-block;
+    text-align: center;
+    line-height: 16px;
+    opacity: 0.5;
+    margin-right: 5px;
+  }
+  
+  /* Product Price */
+  .product-price {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 40px;
+  }
+   
+  .product-price span {
+    font-size: 26px;
+    font-weight: 300;
+    color: #43474D;
+    margin-right: 20px;
+  }
+
+  /* button for product-price*/
+  .product-price .button {
+    position: relative;
+  height: 30px;
+  width: 30%;
+  top: -15px;
+  border-radius: 25px;
+  margin-top: 30px;
+  overflow: hidden;
+  }
+  .product-price .button .button-layer {
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    left: -100%;
+    background-image: linear-gradient(135deg, #9708cc, #43cbff, #9708cc, #43cbff);
+    transition: all 0.4s ease;
+    border-radius: 25px;
+  }
+  .product-price .button:hover .button-layer {
+    left: 0;
+  }
+  .product-price .button button {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+
+
+   /* */
+  .cart-btn {
+    display: inline-block;
+    background-color: #7DC855;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px;
+    transition: all .5s;
+  }
+  .cart-btn:hover {
+    background-color: #64af3d;
+  }
+
+  /* cart */
+  .cart{
+    position: relative;
+    max-width: 180px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 20px 30px 30px 30px;
+    
+    
+    z-index: 3;
+    overflow: hidden;
+    list-style: none;
+    left: 200px;
+    top: -180px;
+  }
+  .cart ul {
+    list-style: none;
+    padding: 0;
+    color: #2b2c30;
+  }
+  .cart .button {
+    position: relative;
+  height: 50px;
+  width: 100%;
+  border-radius: 25px;
+  margin-top: 30px;
+  overflow: hidden;
+  }
+  .cart .button .button-layer {
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    left: -100%;
+    background-image: linear-gradient(135deg, #9708cc, #43cbff, #9708cc, #43cbff);
+    transition: all 0.4s ease;
+    border-radius: 25px;
+  }
+  .cart .button:hover .button-layer {
+    left: 0;
+  }
+  .cart .button button {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  
+  /* Responsive */
+@media (max-width: 940px) {
+    .container {
+      flex-direction: column;
+      margin-top: 60px;
+    }
+   
+    .left-column,
+    .right-column {
+      width: 100%;
+    }
+   
+    .left-column img {
+      width: 300px;
+      right: 0;
+      top: -65px;
+      left: initial;
+    }
+  }
+   
+  @media (max-width: 535px) {
+    .left-column img {
+      width: 220px;
+      top: -85px;
+    }
+  }

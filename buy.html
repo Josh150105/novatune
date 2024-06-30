@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add To Cart</title>
+    <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+    <main class="container">
+ 
+        <!-- Left Column / Headphones Image -->
+        <div class="left-column">
+          <img
+          id="blue"
+          class="blue active"
+          src="https://www.yudiz.com/codepen/headphone-slider/blue.png"
+          alt="blue"
+        />
+
+          <img id="black" class="black" src="https://www.yudiz.com/codepen/headphone-slider/black.png" alt="blue">
+          <img id="green" class="green" src="https://www.yudiz.com/codepen/headphone-slider/green.png" alt="blue" />
+        <img id="red" class="red" src="https://www.yudiz.com/codepen/headphone-slider/red.png" alt="blue" />
+        </div>
+       
+       
+        <!-- Right Column -->
+        <div class="right-column">
+       
+          <!-- Product Description -->
+          <div class="product-description">
+            <h1>Apple AirPods Max Headphones.</h1>
+            <p>Active Noise Cancelling, Transparency Mode, Spatial Audio, Digital Crown for Volume Control. Bluetooth Headphones for iPhone</p>
+          </div>
+       
+          <!-- Product Configuration -->
+          <div class="product-configuration">
+       
+            <!-- Product Color -->
+            <div class="color-price">
+              <div class="color-option">
+                <span class="color">Colour:</span>
+                <div class="circles">
+                  <span class="circle blue active" id="blue"></span>
+                  <span class="circle green" id="green"></span>
+                  <span class="circle red" id="red"></span>
+                  <span class="circle black" id="black"></span>
+                </div>
+              </div>
+       
+            <!-- Cable Configuration -->
+            <div class="cable-config">
+              
+       
+              <a href="https://support.apple.com/en-in/108364">How to configurate your headphones</a>
+            </div>
+          </div>
+       
+          <!-- Product Pricing -->
+          <div class="product-price">
+            <span>229$</span>
+            <div class="button">
+              <div class="button-layer"></div>
+            <button onclick="addToCart(1, 'Headphone ', 229)">Add to cart</button>
+          </div>
+          </div>
+        </div>
+
+        
+       
+        <section class="cart">
+          <h2>Shopping Cart</h2>
+          <ul id="cart-items"></ul>
+          <p>Total: $<span id="total-price">0</span></p>
+          <div class="button">
+          <div class="button-layer"></div>
+          <button>Place Order</button>
+          </div>
+      </section>
+
+
+      </main>
+
+      <script>
+        let circle = document.querySelector(".color-option");
+  
+        circle.addEventListener("click", (e) => {
+          let target = e.target;
+          if (target.classList.contains("circle")) {
+            circle.querySelector(".active").classList.remove("active");
+            target.classList.add("active");
+            document
+              .querySelector(".left-column .active")
+              .classList.remove("active");
+            document
+              .querySelector(`.left-column .${target.id}`)
+              .classList.add("active");
+          }
+        });
+      </script>
+
+    <script src="buy.js"></script>
+</body>
+</html>
